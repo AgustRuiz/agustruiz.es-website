@@ -56,6 +56,7 @@ header #logo{
 	width: 40%;
 	float: left;
 	font-family: graublauwebbold;
+	font-weight: normal;
 	font-size: 3rem;
 	color: #FF3131;
 }
@@ -71,8 +72,8 @@ header span.subsubtitle{
 header nav{
 	width: 60%;
 	float: right;
-	padding: 10px 0;
-	margin-top: 30px;
+	padding: 1rem 0;
+	margin-top: 2rem;
 }
 
 header nav ul{
@@ -147,6 +148,7 @@ header nav ul li a.active:hover{
 #no-slide #slideshow article h2 a{
 	margin-top: 1%;
 	font-family: graublauwebbold;
+	font-weight: normal;
 	font-size: 2rem;
 }
 
@@ -162,7 +164,7 @@ header nav ul li a.active:hover{
 }
 
 #no-slide #slideshow .slidesjs-pagination{
-	margin auto;
+	margin: auto;
 	text-align: center;
 }
 
@@ -196,7 +198,8 @@ header nav ul li a.active:hover{
 /****** MAIN ******/
 
 #main {
-	overflow: hidden;
+	/*overflow: hidden;*/
+	/*display: block;*/
 }
 
 /* Article List */
@@ -225,6 +228,7 @@ header nav ul li a.active:hover{
 
 #main #articles_list article h2{
 	font-family: graublauwebbold;
+	font-weight: normal;
 	font-size: 2rem;
 }
 
@@ -274,7 +278,7 @@ header nav ul li a.active:hover{
 	overflow: hidden;
 }
 
-.widget{
+aside .widget{
 	background-color: #fff;
 	border-radius: 3px;
 	box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.1) inset;
@@ -286,6 +290,7 @@ header nav ul li a.active:hover{
 
 .widget h3{
 	font-family: graublauwebbold;
+	font-weight: normal;
 	font-size: 1.3rem;
 	padding: 1rem 1rem 1rem 1rem;
 	color: #FF3131;
@@ -294,6 +299,11 @@ header nav ul li a.active:hover{
 .widget ul{
 	padding: 0rem 1rem 1rem 1rem;
 	list-style: none;
+}
+
+.widget ul li{
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
 }
 
 .widget ul li a, .widget ul li a:visited{
@@ -308,21 +318,41 @@ header nav ul li a.active:hover{
 
 /****** Footer ******/
 footer{
-	width: 100%;
-	background-color: #740505;
-	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5) inset;
+	clear:both;
+	font-family: "Open-Sans", Helvetica,Arial,sans-serif; 
+	display: block;
 	overflow: hidden;
+	width: 100%;
+	background-color: #555;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5) inset;
+
 }
 
 footer .widget{
-	margin: 1rem;
-	width: 20%;
+	margin: 1%;
+	width: 23%;
+	display: block;
+	float: left;
+	color: #aaa;
+}
+
+footer .widget h3{
+	color: #999;
+}
+
+footer .widget ul li{
+	padding: 0rem 0.5rem 0.5rem 0.5rem;
+}
+
+footer .widget ul li a{
+	color: #222;
 }
 
 footer #copyright{
+	overflow: hidden;
 	width: 100%;
-	clear: both;
+	font-family: "Open-Sans", Helvetica,Arial,sans-serif; 
 	text-align: center;
 	padding: 0.5rem;
-	color: #9C4F4F;
+	color: #999;
 }

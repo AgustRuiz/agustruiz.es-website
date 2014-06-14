@@ -1,1 +1,109 @@
-/* DISEÑOS RESPONSIVE */
+/****** Header ******/
+@media screen and (max-width: 1110px){
+	header #logo{
+		width: 100%;
+		text-align: center;
+	}
+	header nav{
+		width: 100%;
+	}
+	header nav ul{
+		text-align: center;
+		float: none;
+	}
+}
+
+/****** Tablet horizontal ******/
+@media screen and (max-width: 1024px){
+#no-slide{
+	display: none;
+}
+
+footer .widget{
+	margin: 1%;
+	width: 31%;
+}
+
+/*.widget li{
+	background-color: #eee;
+	border-radius: 2px;
+	box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.1) inset;
+	padding: 0.5rem 1rem;
+	}*/
+}
+
+/****** Tablet vertical ******/
+@media screen and (max-width: 768px){
+	footer .widget{
+		margin: 1rem 5%;
+		width: 90%;
+	}
+
+	#main{
+		margin-right: 0;
+	}
+
+	#main #articles_list{
+		width: 100%;
+		padding-right: 0;
+	}
+
+	#main aside{
+		width:95%;
+		margin: 0;
+	}
+
+	.widget{
+		width: 100%;
+		padding: 0;
+	}
+
+
+}
+
+
+/****** Macro pequeño ******/
+@media screen and (max-width: 670px){
+	header #logo{
+		font-size: 2rem;
+	}
+
+	header span.subtitle{
+		font-size: 1rem;
+	}
+
+	header span.subsubtitle{
+		font-size: 0.66rem;
+	}
+
+	header nav{
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	header nav ul li{
+		margin-bottom: 0.5rem;
+	}
+
+	header nav ul li a{
+		font-size: 1rem;
+		padding: 0.2rem 0.5rem;
+		margin-left: 0.2rem;
+	}
+
+
+
+	#main #articles_list article .thumb{
+		width: 100%;
+		display: block;
+		margin-right: 0.5rem;
+	}
+
+	#main #articles_list article h2{
+		font-size: 1.5rem;
+	}
+
+	footer #copyright{
+		font-size: 0.7rem;
+	}
+}
