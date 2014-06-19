@@ -1,5 +1,5 @@
 /*
-Theme Name: Nombre Tema
+Theme Name: AgustRuiz
 Theme URL: www.agustruiz.es
 Description: Tema de la web www.agustruiz.es
 Version: 1
@@ -163,6 +163,11 @@ header nav ul li a.active:hover{
 	margin-bottom: 0.5rem;
 }
 
+#no-slide #slideshow article .date ul{
+	list-style: none;
+	display: inline-block;
+}
+
 #no-slide #slideshow .slidesjs-pagination{
 	margin: auto;
 	text-align: center;
@@ -226,6 +231,11 @@ header nav ul li a.active:hover{
 	margin-right: 1rem;
 }
 
+#main #articles_list article .thumb img{
+	max-width: 100%;
+	height: auto;
+}
+
 #main #articles_list article h2{
 	font-family: graublauwebbold;
 	font-weight: normal;
@@ -243,10 +253,16 @@ header nav ul li a.active:hover{
 	margin-bottom: 0.5rem;
 }
 
+#main #articles_list article .date ul{
+	list-style: none;
+	display: inline-block;
+}
+
 #main #articles_list article .extract{
 	font-family: "Open-Sans", Helvetica,Arial,sans-serif; 
 	text-align: justify;
 	color: #333;
+	padding: 0.5rem 0rem;
 }
 
 #main #articles_list #pagination{
@@ -261,6 +277,7 @@ header nav ul li a.active:hover{
 #main #articles_list #pagination a{
 	display: block;
 	padding: 1rem 4rem;
+	text-align: center;
 }
 
 #main #articles_list #pagination a.anterior{
@@ -355,4 +372,24 @@ footer #copyright{
 	text-align: center;
 	padding: 0.5rem;
 	color: #999;
+}
+
+/****** BLOG ******/
+#main #articles_list #cat_name{
+	font-family: graublauwebbold;
+	font-size: 1.5rem;
+	color: #9C4F4F;
+	padding: 0.5rem 0;
+
+}
+
+/* Comentarios */
+/********** BORRAR ***********/
+#main #articles_list #comentarios{
+	font-family: graublauwebbold;
+	font-size: 1rem;
+	color: #9C4F4F;
+	border-top: #999 solid 1px;
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
 }
