@@ -1,38 +1,32 @@
-/****** Header ******/
+/****** HEADER ******/
 @media screen and (max-width: 1110px){
-	header #logo{
+	header #header-title{
 		width: 100%;
 		text-align: center;
 	}
-	header nav{
-		width: 100%;
+
+	header nav.expanded{
+		display: block;
 	}
-	header nav ul{
-		text-align: center;
-		float: none;
+
+	header nav.collapsed{
+		display: none;
 	}
 }
 
-/****** Tablet horizontal ******/
+/****** TABLET HORIZONTAL ******/
 @media screen and (max-width: 1024px){
-#no-slide{
-	display: none;
+	#no-slide{
+		display: none;
+	}
+
+	footer .widget{
+		margin: 1%;
+		width: 31%;
+	}
 }
 
-footer .widget{
-	margin: 1%;
-	width: 31%;
-}
-
-/*.widget li{
-	background-color: #eee;
-	border-radius: 2px;
-	box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.1) inset;
-	padding: 0.5rem 1rem;
-	}*/
-}
-
-/****** Tablet vertical ******/
+/****** TABLET VERTICAL ******/
 @media screen and (max-width: 768px){
 	footer .widget{
 		margin: 1rem 5%;
@@ -58,38 +52,64 @@ footer .widget{
 		padding: 0;
 	}
 
+	header #a-logo, header #img-logo{
+		float: none;
+		display: block;
+		height: 10rem;
+		width: 10rem;
+	}
 
+	header{
+		padding-top:0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	header nav.expanded{
+		display: none;
+	}
+
+	header nav.collapsed{
+		display: block;
+	}
 }
 
 
-/****** Macro pequeño ******/
+/****** VERY SMALL ******/
 @media screen and (max-width: 670px){
-	header #logo{
+
+	header #header-title{
 		font-size: 2rem;
 	}
 
-	header span.subtitle{
+	header .subtitle{
 		font-size: 1rem;
 	}
 
-	header span.subsubtitle{
+	header .subsubtitle{
 		font-size: 0.66rem;
 	}
 
-	header nav{
-		margin-top: 1rem;
-		margin-bottom: 0.5rem;
-	}
 
-	header nav ul li{
-		margin-bottom: 0.5rem;
-	}
 
-	header nav ul li a{
-		font-size: 1rem;
-		padding: 0.2rem 0.5rem;
-		margin-left: 0.2rem;
-	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

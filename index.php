@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
-<div id="no-slide">
-	<?php include(TEMPLATEPATH."/slideshow.php"); ?>
-</div>
+<?php include(TEMPLATEPATH."/slideshow.php"); ?>
+
+
 <section id="main">
 	<section id="articles_list">
 

@@ -1,42 +1,41 @@
 /*
 Theme Name: AgustRuiz
 Theme URL: www.agustruiz.es
-Description: Tema de la web www.agustruiz.es
+Description: Theme website www.agustruiz.es
 Version: 1
 Author: AgustRuiz
 Author URL: www.agustruiz.es
 */
 
+/****** GENERAL IMPORTS ******/
+@import url(css/header.css);
 
+/****** SOURCES ******/
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 
-/****** FUENTES ******/
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
 @font-face {
-    font-family: "graublauwebbold";
-    src: url("fonts/graublauwebbold-webfont.woff") format('woff');
-}
+	font-family: "graublauwebbold";
+	src: url("fonts/graublauwebbold-webfont.woff") format('woff');
+}/**/
 
-/****** ESTILOS GENERALES ******/
+
+/****** GENERAL STYLES ******/
 *{
 	margin:0;
 	padding:0;
 }
 
 body{
-	background-color: #eee;
+	background-image: url('img/background.jpg');
+    background-repeat: repeat;
+	/*background-color: #eee;/**/
 	color: #333;
 	font-size:12pt;
-	font-family: "open sans", Arial, Helvetica, sans-serif;
-}
-
-header, #main, #ft_widget{
-	width: 95%;
-	max-width: 1500px;
-	margin: 0 auto;
+	font-family: Roboto, "open sans", Arial, Helvetica, sans-serif;
 }
 
 a, a:visited{
-	color:#FF3131;
+	color:#075E54;
 	text-decoration: none;
 }
 
@@ -44,88 +43,74 @@ a:hover{
 	text-decoration: underline;
 }
 
-/****** HEADER ******/
-header{
-	margin-top:20px;
-	margin-bottom: 20px;
-	overflow: hidden;
-	width:95%;
-}
-
-header #logo{
-	width: 40%;
-	float: left;
-	font-family: graublauwebbold;
-	font-weight: normal;
-	font-size: 3rem;
-	color: #FF3131;
-}
-
-header span.subtitle{
-	font-size: 1.5rem;
-}
-
-header span.subsubtitle{
-	font-size: 1rem;
-}
-
-header nav{
-	width: 60%;
-	float: right;
-	padding: 1rem 0;
-	margin-top: 2rem;
-}
-
-header nav ul{
-	float:right;
-}
-
-header nav ul li{
-	list-style: none;
-	display: inline-block;
-}
-
-header nav ul li a, header nav ul li a:visited{
-	font-size: 1.5rem;
-	background-color: #FF3131;
-	color: #FFF;
-	padding: 0.5rem 1rem;
-	margin-left: 0.5rem;
-	border-radius: 3px;
-	box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.1) inset;
-}
-
-header nav ul li a:hover{
-	background-color: #FF7E7E;
+a.no-decoration, a.no-decoration:hover, a.no-decoration:active, a.no-decoration:visited{
 	text-decoration: none;
-	box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.1) inset;
 }
 
-header nav ul li a:active{
-	background-color: #740505;
-	text-decoration: none;
-	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1) inset;
+.center{
+	text-align: center;
 }
 
-header nav ul li.current-menu-item a{
-	background-color: #333;
-	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1) inset;
-}
-
-header nav ul li.current-menu-item a:hover{
-	background-color: #666;
+.debug{
+	background-color: #F0F;
 }
 
 
-/****** Slideshow ******/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** SLIDESHOW ******/
 #no-slide #slideshow{
 	width: 100%;
 	float:left;
 	overflow: hidden;
 	padding: 0;
-	background-color: #740505;
+	background-color: #075E54;
 	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5) inset;
 	margin-bottom: 2rem;
+}
+
+#no-slide #slideshow article h2 a:hover{
+	text-decoration: none;
 }
 
 #no-slide #slideshow .thumb{
@@ -136,8 +121,8 @@ header nav ul li.current-menu-item a:hover{
 }
 
 #no-slide #slideshow article{
-	font-family: 'Open Sans', Arial, Helvetica, sans-serif;
-	color: #fff;
+	font-family: Roboto, 'Open Sans', Arial, Helvetica, sans-serif;
+	color: #CCC;
 	font-size: 1rem;
 	text-align: justify;
 	width: 58%;
@@ -147,19 +132,20 @@ header nav ul li.current-menu-item a:hover{
 }
 
 #no-slide #slideshow article h2 a{
-	margin-top: 1%;
 	font-family: graublauwebbold;
+	color: #CCC;
 	font-weight: normal;
 	font-size: 2rem;
+	margin-top: 1%;
 }
 
-#no-slide #slideshow article h2 a:hover{
-	text-decoration: none;
+#no-slide #slideshow a{
+	color: #0E998C;;
 }
 
 #no-slide #slideshow article .date{
 	font-size:0.8rem;
-	color: #9C4F4F;
+	color: #0E998C;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 }
@@ -170,15 +156,15 @@ header nav ul li.current-menu-item a:hover{
 }
 
 #no-slide #slideshow article .date ul li{
-    display: inline-block;
+	display: inline-block;
 }
 
 #no-slide #slideshow article .date ul li:after{
-    content: ", ";
+	content: ", ";
 }
 
 #no-slide #slideshow article .date ul li:last-child:after{
-    content: "";
+	content: "";
 }
 
 #no-slide #slideshow .slidesjs-pagination{
@@ -197,24 +183,66 @@ header nav ul li.current-menu-item a:hover{
 	height: 1rem;
 	font-size: 0;
 	display: block;
-	background-color: #FFF;
+	background-color: #054D44;
 	border-radius: 0.5rem;
 	box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.1) inset;
 }
 
 #no-slide #slideshow .slidesjs-pagination li a:hover{
-	background-color: #FF7E7E;
+	background-color: #0E998C;
 }
 
 #no-slide #slideshow .slidesjs-pagination li a.active{
 	font-size: 0;
 	display: block;
-	background-color: #FF3131;
+	background-color: #FFF;
 	box-shadow: 0 -3px 0 0 rgba(0, 0, 0, 0.1) inset;
 }
 
-/****** MAIN ******/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** MAIN ******/
 #main {
 	/*overflow: hidden;*/
 	/*display: block;*/
@@ -268,30 +296,30 @@ header nav ul li.current-menu-item a:hover{
 
 #main #articles_list article .date{
 	font-size:0.8rem;
-	color: #9C4F4F;
+	color: #075E54;
 	margin-top: 0;
 	margin-bottom: 0.5rem;
 }
 
 #main #articles_list article .date ul{
-	list-style: none;
+	list-style: none;display: block;
 	display: inline-block;
 }
 
 #main #articles_list article .date ul li{
-    display: inline-block;
+	display: inline-block;
 }
 
 #main #articles_list article .date ul li:after{
-    content: ", ";
+	content: ", ";
 }
 
 #main #articles_list article .date ul li:last-child:after{
-    content: "";
+	content: "";
 }
 
 #main #articles_list article .extract, #main #articles_list article .extract p{
-	font-family: "Open-Sans", Helvetica,Arial,sans-serif; 
+	font-family: Roboto, "Open-Sans", Helvetica,Arial,sans-serif; 
 	text-align: justify;
 	color: #333;
 	padding: 0.2rem 0rem;
@@ -320,7 +348,7 @@ header nav ul li.current-menu-item a:hover{
 	float: right;
 }
 
-/* aside */
+/* ASIDE */
 #main aside{
 	width: 25%;
 	float: left;
@@ -342,7 +370,7 @@ aside .widget{
 	font-weight: normal;
 	font-size: 1.3rem;
 	padding: 1rem 1rem 1rem 1rem;
-	color: #FF3131;
+	color: #075E54;
 }
 
 .widget ul{
@@ -356,19 +384,19 @@ aside .widget{
 }
 
 .widget ul li a, .widget ul li a:visited{
-	font-family: "Open-Sans", Helvetica,Arial,sans-serif;
+	font-family: Roboto, "Open-Sans", Helvetica,Arial,sans-serif;
 	color: #333;
 }
 
 .widget ul li a:hover{
-	color: #FF3131;
+	color: #075E54;
 	text-decoration: none;
 }
 
-/****** Footer ******/
+/****** FOOTER ******/
 footer{
 	clear:both;
-	font-family: "Open-Sans", Helvetica,Arial,sans-serif; 
+	font-family: Roboto, "Open-Sans", Helvetica,Arial,sans-serif; 
 	display: block;
 	overflow: hidden;
 	width: 100%;
@@ -399,7 +427,7 @@ footer .widget ul li a{
 footer #copyright{
 	overflow: hidden;
 	width: 100%;
-	font-family: "Open-Sans", Helvetica,Arial,sans-serif; 
+	font-family: Roboto, "Open-Sans", Helvetica,Arial,sans-serif; 
 	text-align: center;
 	padding: 0.5rem;
 	color: #999;
@@ -409,7 +437,7 @@ footer #copyright{
 #main #articles_list #cat_name{
 	font-family: graublauwebbold;
 	font-size: 1.5rem;
-	color: #9C4F4F;
+	color: #075E54;
 	padding: 0.5rem 0;
 
 }
@@ -424,18 +452,18 @@ footer #copyright{
 #main #articles_list #comentarios h2{
 	font-family: graublauwebbold;
 	font-size: 1.3rem;
-	color: #9C4F4F;
+	color: #075E54;
 	margin-bottom: 1rem;
 }
 
 #main #articles_list #comentarios h3{
 	font-family: graublauwebbold;
 	font-size: 1rem;
-	color: #9C4F4F;
+	color: #075E54;
 }
 
 #main #articles_list #comentarios p{
-	font-family: "Open-Sans", Helvetica,Arial,sans-serif;
+	font-family: Roboto, "Open-Sans", Helvetica,Arial,sans-serif;
 	font-size: 1rem;
 	padding: 0.5rem 0;
 }
@@ -478,15 +506,15 @@ footer #copyright{
 
 
 #main #articles_list #comentarios small{
-	font-family: "Open-Sans", Helvetica,Arial,sans-serif;
+	font-family: Roboto, "Open-Sans", Helvetica,Arial,sans-serif;
 	font-size: 0.8rem;
 	color: #666;
 }
 
 #main #articles_list #comentarios input[type=submit]{
-	font-family: "Open-Sans", Helvetica,Arial,sans-serif;
+	font-family: Roboto, "Open-Sans", Helvetica,Arial,sans-serif;
 	font-size: 1rem;
-	background-color: #FF3131;
+	background-color: #075E54;
 	color: #FFF;
 	padding: 0.5rem 1rem;
 	border: 0;
@@ -495,13 +523,13 @@ footer #copyright{
 }
 
 #main #articles_list #comentarios input[type=submit]:hover{
-	background-color: #FF7E7E;
+	background-color: #0E998C;
 	text-decoration: none;
 	box-shadow: 0 -5px 0 0 rgba(0, 0, 0, 0.1) inset;
 }
 
 #main #articles_list #comentarios input[type=submit]:active{
-	background-color: #740505;
+	background-color: #075E54;
 	text-decoration: none;
 	box-shadow: 0 5px 0 0 rgba(0, 0, 0, 0.1) inset;
 }
@@ -519,7 +547,7 @@ footer #copyright{
 }
 
 #calendar_wrap #wp-calendar tbody td#today{
-	background-color: #FF3131;
+	background-color: #075E54;
 	border-radius: 3px;
 	color:#fff;
 }
