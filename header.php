@@ -45,13 +45,37 @@
 						<img src="<?php bloginfo('template_url'); ?>/img/yo2.png" id="img-logo" alt="Logo"/>
 					</a>
 				</center>
+				<div id="social">
+					<div class="social-wrapper">
+						<a href="#twitter" target="_blank" class="social-item twitter">
+							<div class="circle"><img src="<?php bloginfo('template_url'); ?>/img/twitter-white.png" alt="Twitter logo"/></div>
+							<div class="text"><span>@AgustRuiz</span></div>
+						</a>
+					</div>
+					<div class="social-wrapper">
+						<a href="#facebook" target="_blank" class="social-item facebook">
+							<div class="circle"><img src="<?php bloginfo('template_url'); ?>/img/facebook-white.png" alt="Facebook logo"/></div>
+							<div class="text"><span>Agustín Ruiz Linares</span></div>
+						</a>
+					</div>
+					<div class="social-wrapper">
+						<a href="#github" target="_blank" class="social-item github">
+							<div class="circle"><img src="<?php bloginfo('template_url'); ?>/img/github-white.png" alt="Github logo"/></div>
+							<div class="text"><span>github.com/AgustRuiz</span></div>
+						</a>
+					</div>
+					<div class="social-wrapper">
+						<a href="#youtube" target="_blank" class="social-item youtube">
+							<div class="circle"><img src="<?php bloginfo('template_url'); ?>/img/youtube-white.png" alt="Youtube logo"/></div>
+							<div class="text"><span>Agustín Ruiz Linares</span></div>
+						</a>
+					</div>
+				</div>
 				<a id="header-title" onclick="location.href='<?php bloginfo('url'); ?>'" class="no-decoration">
 					<span >[A]<span style="letter-spacing:0.2em;">GUST</span>[R]<span style="letter-spacing:0.2em;">UIZ</span><span style="text-transform:none; font-size:0.75em; letter-spacing:0.1em;">.es</span></span>
 					<br/>
 					<span class="subtitle">Ingeniero Informático<span class="subsubtitle"> (...y más)</span></span>
 				</a>
-				<div id="social">
-				</div>
 			</div>
 			<nav class="expanded">
 				<?php wp_nav_menu( array( 'containter' => 'false', 'items_wrap' => '<ul id="menu-top">%3$s</ul>', 'theme_location' => 'menu' ));?>

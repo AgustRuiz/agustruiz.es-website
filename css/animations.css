@@ -171,3 +171,53 @@
 	0%   { padding-left: 2rem; }
 	100% { padding-left: 1rem; }
 }
+
+
+
+
+
+
+
+
+
+
+
+/********* socialHide *********/
+@keyframes socialRollOut {
+	0%   {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes socialRollIn {
+	0%   {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes socialRollHide{
+	0%   {
+		padding: 0rem 1rem 0rem 2.5rem;
+		width: auto;
+	}
+	100% {
+		padding: 0;
+		width: 2rem;
+	}
+}
+
+@keyframes socialRollShow{
+	0%   {
+		padding: 0;
+		width: 2rem;
+	}
+	100% {
+		padding: 0rem 1rem 0rem 2.5rem;
+		width: auto;
+	}
+}
