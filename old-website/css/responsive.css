@@ -1,0 +1,129 @@
+/****** HEADER ******/
+@media screen and (max-width: 1110px){
+	header #header-title{
+		width: 100%;
+		text-align: center;
+	}
+
+	header nav.expanded{
+		display: block;
+	}
+
+	header nav.collapsed{
+		display: none;
+	}
+}
+
+/****** TABLET HORIZONTAL ******/
+@media screen and (max-width: 1024px){
+	#no-slide{
+		display: none;
+	}
+
+	footer .widget{
+		margin: 1%;
+		width: 31%;
+	}
+}
+
+/****** TABLET VERTICAL ******/
+@media screen and (max-width: 768px){
+	footer .widget{
+		margin: 1rem 5%;
+		width: 90%;
+	}
+
+	#main{
+		margin-right: 0;
+	}
+
+	#main #articles_list{
+		width: 100%;
+		padding-right: 0;
+	}
+
+	#main aside{
+		width:95%;
+		margin: 0;
+	}
+
+	.widget{
+		width: 100%;
+		padding: 0;
+	}
+
+	header #a-logo, header #img-logo{
+		float: none;
+		display: block;
+		height: 10rem;
+		width: 10rem;
+	}
+
+	header{
+		padding-top:0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	header nav.expanded{
+		display: none;
+	}
+
+	header nav.collapsed{
+		display: block;
+	}
+}
+
+
+/****** VERY SMALL ******/
+@media screen and (max-width: 670px){
+
+	header #header-title{
+		font-size: 2rem;
+	}
+
+	header .subtitle{
+		font-size: 1rem;
+	}
+
+	header .subsubtitle{
+		font-size: 0.66rem;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	#main #articles_list article .thumb{
+		width: 100%;
+		display: block;
+		margin-right: 0.5rem;
+	}
+
+	#main #articles_list article h2{
+		font-size: 1.5rem;
+	}
+
+	footer #copyright{
+		font-size: 0.7rem;
+	}
+}
