@@ -1,0 +1,3 @@
+agust_ruiz_admin_homepage:
+    path:     /admin/
+    defaults: { _controller: AgustRuizAdminBundle:Default:index }

@@ -1,3 +1,7 @@
+agust_ruiz_admin:
+    resource: "@AgustRuizAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
 acme_hello:
     resource: "@AcmeHelloBundle/Resources/config/routing.yml"
     prefix:   /

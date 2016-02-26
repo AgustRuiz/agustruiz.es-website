@@ -1,0 +1,68 @@
+{% extends '::base.html.twig' %}
+
+{% block title %} Administrator {% endblock %}
+
+{% block stylesheets %}
+    <link href="{{ asset ('materialize/css/materialize.min.css') }}" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+    <link href="{{ asset ('materialize/css/sidebarFixed.css') }}" type="text/css" rel="stylesheet"
+          media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{{ asset('js/jquery-2.2.1.min.js') }}"></script>
+    <script src="{{ asset('materialize/js/materialize.min.js') }}"></script>
+    <script src="{{ asset('materialize/js/init.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+
+
+
+    <nav>
+        <ul id="slide-out" class="side-nav fixed">
+            <li><a href="#!">First Sidebar Link</a></li>
+            <li><a href="#!">Second Sidebar Link</a></li>
+        </ul>
+        <header>
+            <div class="row">
+                <div class="col">
+                    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                    <a href="#!" class="brand-logo">AgustRuiz.es</a>
+                </div>
+            </div>
+        </header>
+    </nav>
+
+    <main>
+        <div class="row">
+            <div class="col">
+                Hello World from admin screen!
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="page-footer">
+        <div class="row">
+            <div class="col">
+                <p>Footer</p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="row">
+                <div class="col">
+                    &copy; 2016 - Agustín Ruiz Linares
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+{% endblock %}
